@@ -1,8 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SwordSlash_AC : MonoBehaviour
 {
     Collider2D Collider;
+    AbilitySO abilityData;
+
+    public void Initialize(AbilitySO ability)
+    {
+        abilityData = ability;
+    }
 
     private void OnStart()
     {
@@ -21,7 +28,9 @@ public class SwordSlash_AC : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            enemy.TakeDamage(abilityData.damage);
+            enemy.TakeKnockback(abilityData.knockback);
         }
     }
 }

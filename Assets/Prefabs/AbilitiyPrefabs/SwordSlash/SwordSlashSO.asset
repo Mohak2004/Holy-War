@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwordSlashSO
   a_name: 
   description: 
-  cooldown: 2
+  cooldown: 1
   damage: 50
-  knockback: 5
+  knockback: 4
   swordSlashPrefab: {fileID: 6796947302187751564, guid: 76814a6560144cc48a41b6c2ac30b5a1, type: 3}
