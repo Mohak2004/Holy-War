@@ -35,7 +35,8 @@ public class PlayerStats : MonoBehaviour
     private void Die()
     {
         Time.timeScale = 0f;
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     public void UseStamina(float amount)
