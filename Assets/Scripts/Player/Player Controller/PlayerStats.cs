@@ -1,12 +1,18 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] IG_UI HealthBar;
     [SerializeField] IG_UI StaminaBar;
+    [SerializeField] GameObject TextObject;
+
     [SerializeField] protected float maxHealth, maxStamina, maxHealthFlasks, staminaRegenRate;
     public float currentHealth, currentStamina, currentHealthFlasks, currentLevel;
+    
 
     void Awake()
     {
@@ -35,8 +41,9 @@ public class PlayerStats : MonoBehaviour
     private void Die()
     {
         Time.timeScale = 0f;
-        //Destroy(gameObject);
-        gameObject.SetActive(false);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        TextObject.SetActive(true);
+
     }
 
     public void UseStamina(float amount)

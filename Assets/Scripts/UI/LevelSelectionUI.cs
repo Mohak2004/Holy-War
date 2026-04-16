@@ -11,5 +11,6 @@ public class LevelSelectionUI : MonoBehaviour
     public void OnLevel1ButtonClicked()
     {
         SceneManager.LoadScene("Level1");
+        Time.timeScale = 1.0f;
     }
 }
