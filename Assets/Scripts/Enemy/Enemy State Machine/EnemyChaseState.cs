@@ -22,9 +22,10 @@ public class EnemyChaseState : EnemyState
         {
             enemy.rb.linearVelocity = enemy.moveDir * enemy.moveSpeed;
         }
-        else
+        else if (dist < enemy.attackRange && enemy.cooldownTimer < 0)
         {
             enemyStateMachine.ChangeState(enemy.attackState);
+            enemy.cooldownTimer = enemy.enemyData.cooldownTime;
         }
 
         if (enemy.moveDir.x < 0)

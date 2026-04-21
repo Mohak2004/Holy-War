@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0744b02d19230c14e82a4fc2d5074672, type: 3}
+  m_Name: SK_Boss_SO
+  m_EditorClassIdentifier: Assembly-CSharp::SK_Boss
+  enemyPrefab: {fileID: 5984919550682893875, guid: 79895e546987a9047968ee1db3a31396, type: 3}
+  enemyHealth: 150
+  enemySpeed: 2
+  enemyCollisionDamage: 25
+  enemyAttackDamage: 50
+  attackRange: 6
+  spawnRate: 0
+  spawnLevel: 0
+  enemyXPReward: 0
+  cooldownTime: 2

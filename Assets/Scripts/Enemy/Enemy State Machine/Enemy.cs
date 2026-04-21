@@ -16,8 +16,8 @@ public class Enemy : MonoBehaviour
 
     public Vector2 moveDir;
 
-    float currentHealth;
-    public float moveSpeed, attackRange, knockbackTimer;
+    public float currentHealth;
+    public float moveSpeed, attackRange, knockbackTimer, cooldownTimer;
     public bool isChasing, isAttacking, isAttackingLeft, isAttackingRight, isKnockback;
 
     public void Init(EnemySO e)
@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour
         attackRange = e.attackRange;
         currentHealth = e.enemyHealth;
         knockbackTimer = 0.5f;
+        cooldownTimer = e.cooldownTime;
 
         player = GameObject.FindWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
@@ -59,6 +60,7 @@ public class Enemy : MonoBehaviour
     private void FixedUpdate()
     {
         moveDir = new Vector2(player.position.x - transform.position.x, player.position.y - transform.position.y).normalized;
+        cooldownTimer -= Time.deltaTime;
 
         if (isKnockback)
         {
@@ -91,5 +93,10 @@ public class Enemy : MonoBehaviour
     {
         isKnockback = true;
         rb.AddForce(moveDir * -1 * knowkback, ForceMode2D.Impulse);
+    }
+
+    public void GoToChaseState()
+    {
+        enemyStateMachine.ChangeState(chaseState);
     }
 }

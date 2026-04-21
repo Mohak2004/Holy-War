@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2fecc51a1a65a49b31fb67da33fa54, type: 3}
+  m_Name: BasicSkeletonSO
+  m_EditorClassIdentifier: Assembly-CSharp::BasicSkeletonSO
+  enemyPrefab: {fileID: 4714602780313066859, guid: 3f5aca25989bfda4a888a140574dde14, type: 3}
+  enemyHealth: 100
+  enemySpeed: 4
+  enemyCollisionDamage: 25
+  enemyAttackDamage: 0
+  attackRange: 0
+  spawnRate: 1
+  spawnLevel: 0
+  enemyXPReward: 0

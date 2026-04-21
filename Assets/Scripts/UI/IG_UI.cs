@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IG_UI : MonoBehaviour
@@ -16,5 +17,15 @@ public class IG_UI : MonoBehaviour
             slider = GetComponent<Slider>();
 
         slider.value = normalizedValue;
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Next()
+    {
+        SceneManager.LoadScene("Level2");
     }
 }

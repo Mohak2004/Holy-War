@@ -43,6 +43,7 @@ public class EnemyAttackState : EnemyState
     {
         enemy.isAttackingLeft = false;
         enemy.isAttackingRight = false;
+        enemy.isAttacking = false;
     }
 
     public override void OnCollisionEnter(Collision2D other)

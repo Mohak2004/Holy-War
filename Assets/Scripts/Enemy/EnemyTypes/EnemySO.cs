@@ -14,5 +14,6 @@ public abstract class EnemySO : ScriptableObject
     public float spawnRate;
     public float spawnLevel;
     public float enemyXPReward;
+    public float cooldownTime;
 
 }

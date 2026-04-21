@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField] IG_UI HealthBar;
     [SerializeField] IG_UI StaminaBar;
+    [SerializeField] DeathScreen deathScreen;
     [SerializeField] protected float maxHealth, maxStamina, maxHealthFlasks, staminaRegenRate;
     public float currentHealth, currentStamina, currentHealthFlasks, currentLevel;
 
@@ -36,7 +38,7 @@ public class PlayerStats : MonoBehaviour
     {
         Time.timeScale = 0f;
         //Destroy(gameObject);
-        gameObject.SetActive(false);
+        gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     public void UseStamina(float amount)
@@ -52,6 +54,7 @@ public class PlayerStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            deathScreen.Enable();
         }
     }
 
