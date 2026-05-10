@@ -4,6 +4,7 @@ public class Electric_Attack : MonoBehaviour
 {
     public GameObject lightningPrefab;
     public GameObject fireballPrefab;
+    public Collider2D col;
 
     public Transform staffEnd;
     public Transform player;
@@ -29,4 +30,13 @@ public class Electric_Attack : MonoBehaviour
         Instantiate(fireballPrefab, staffEnd.position, Quaternion.Euler(0, 0, angle));
     }
 
+    public void EnableCollider()
+    {
+        col.enabled = true;
+    }
+
+    public void DisableCollider()
+    {
+        col.enabled = false;
+    }
 }

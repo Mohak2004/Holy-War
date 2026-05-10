@@ -54,7 +54,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &512254972031526012
 Transform:
   m_ObjectHideFlags: 0
@@ -250,6 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   lightningPrefab: {fileID: 8349789761599474547, guid: 3dfe87d858be9ba468ddfcc11fe68b6a, type: 3}
+  fireballPrefab: {fileID: 6117623765865843765, guid: 1c96c449c5bad65479f870a0c28cad00, type: 3}
+  staffEnd: {fileID: 1437151849492155741}
   player: {fileID: 0}
 --- !u!114 &5848850257104741978
 MonoBehaviour:

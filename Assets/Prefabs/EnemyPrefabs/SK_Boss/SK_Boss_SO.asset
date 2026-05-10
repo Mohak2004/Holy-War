@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SK_Boss_SO
   m_EditorClassIdentifier: Assembly-CSharp::SK_Boss
   enemyPrefab: {fileID: 5984919550682893875, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-  enemyHealth: 150
+  enemyHealth: 100
   enemySpeed: 2
   enemyCollisionDamage: 25
   enemyAttackDamage: 50

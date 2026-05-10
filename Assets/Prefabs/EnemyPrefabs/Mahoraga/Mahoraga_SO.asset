@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Mahoraga_SO
   m_EditorClassIdentifier: Assembly-CSharp::Mahoraga
   enemyPrefab: {fileID: 4649408689462084751, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
-  enemyHealth: 150
+  enemyHealth: 500
   enemySpeed: 2
   enemyCollisionDamage: 20
   enemyAttackDamage: 50
-  attackRange: 5
+  attackRange: 6
   spawnRate: 0
   spawnLevel: 0
   enemyXPReward: 0
+  cooldownTime: 2

@@ -66200,11 +66200,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 512254972031526012, guid: 79895e546987a9047968ee1db3a31396, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.15409
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 512254972031526012, guid: 79895e546987a9047968ee1db3a31396, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.62701
+      value: 35.8
       objectReference: {fileID: 0}
     - target: {fileID: 512254972031526012, guid: 79895e546987a9047968ee1db3a31396, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66246,33 +66246,13 @@ PrefabInstance:
       propertyPath: WinScreen
       value: 
       objectReference: {fileID: 1729700013}
-    - target: {fileID: 2491234515956270105, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2491234515956270105, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2491234515956270105, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_AngularDamping
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5984919550682893875, guid: 79895e546987a9047968ee1db3a31396, type: 3}
       propertyPath: m_Name
       value: Lich
       objectReference: {fileID: 0}
     - target: {fileID: 5984919550682893875, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984919550682893875, guid: 79895e546987a9047968ee1db3a31396, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984919550682893875, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6994102987396305226, guid: 79895e546987a9047968ee1db3a31396, type: 3}
       propertyPath: player
@@ -66286,22 +66266,6 @@ PrefabInstance:
       propertyPath: fireballPrefab
       value: 
       objectReference: {fileID: 6117623765865843765, guid: 1c96c449c5bad65479f870a0c28cad00, type: 3}
-    - target: {fileID: 7184226135741827477, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_Size.x
-      value: 3.7012072
-      objectReference: {fileID: 0}
-    - target: {fileID: 7184226135741827477, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_Size.y
-      value: 4.566863
-      objectReference: {fileID: 0}
-    - target: {fileID: 7184226135741827477, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.30092478
-      objectReference: {fileID: 0}
-    - target: {fileID: 7184226135741827477, guid: 79895e546987a9047968ee1db3a31396, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.14952517
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66492,7 +66456,8 @@ MonoBehaviour:
   spawnableEnemiesL1:
   - {fileID: 11400000, guid: 35dddc6002e4e09459769229283c1fd3, type: 2}
   - {fileID: 11400000, guid: a6b44a354fbde734dbe6c40fdb64e7d0, type: 2}
-  spawnableEnemiesL2: []
+  spawnableEnemiesL2:
+  - {fileID: 11400000, guid: 9c2ff2b13c09b2741955830d98997364, type: 2}
 --- !u!61 &1762111923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66527,7 +66492,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.030435562, y: 0.076722145}
+  m_Offset: {x: -0.14537811, y: 1.3409882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -66537,7 +66502,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 30.999523, y: 31.159418}
+  m_Size: {x: 102.4879, y: 70.926254}
   m_EdgeRadius: 0
 --- !u!4 &1762111924
 Transform:

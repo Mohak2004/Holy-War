@@ -11206,7 +11206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossSpawn_L1
   enemyPrefab: {fileID: 1582681827}
-  spawnPoint: {fileID: 512399825}
   BossHPBar: {fileID: 1680120490}
 --- !u!1 &1774726125
 GameObject:
@@ -33132,13 +33131,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 122719032523782331, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 070fe3e5143b8074aa701a059f01481f, type: 2}
+    - target: {fileID: 122719032523782331, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993198506119007407, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4595633425067694086, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.583082
+      value: -17.73
       objectReference: {fileID: 0}
     - target: {fileID: 4595633425067694086, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.935431
+      value: 20.1
       objectReference: {fileID: 0}
     - target: {fileID: 4595633425067694086, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33177,17 +33188,13 @@ PrefabInstance:
       value: Mahoraga
       objectReference: {fileID: 0}
     - target: {fileID: 4649408689462084751, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4649408689462084751, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4649408689462084751, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
+    - target: {fileID: 4938334926808273547, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5885252883528312797}
     - target: {fileID: 6633943182029584066, guid: 4cc9f0ae48402c34c9d4d01c033ccc0c, type: 3}
       propertyPath: BossHPBar
       value: 
@@ -33836,6 +33843,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791917250358694173, guid: ac8ad9690b9e50a4a9a7d216e3e2b9fa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6291868562405108430, guid: ac8ad9690b9e50a4a9a7d216e3e2b9fa, type: 3}
       propertyPath: HealthBar
       value: 
@@ -33853,6 +33864,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8ad9690b9e50a4a9a7d216e3e2b9fa, type: 3}
+--- !u!4 &5885252883528312797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4790314980951667468, guid: ac8ad9690b9e50a4a9a7d216e3e2b9fa, type: 3}
+  m_PrefabInstance: {fileID: 5885252883528312796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

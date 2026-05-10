@@ -14,7 +14,7 @@ public class BossSpawn_L1 : MonoBehaviour
 
     private IEnumerator SpawnAfterDelay()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(60f);
         enemyPrefab.SetActive(true);
         BossHPBar.SetActive(true);
     }
